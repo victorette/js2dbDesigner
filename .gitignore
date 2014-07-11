@@ -1,0 +1,8 @@
+*.class
+*.pyc
+*.pyo
+*.bak
+.project
+.pydevproject
+.settings
+static/ext

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <title>JS2DBDesigner</title>
+	    {% csrf_token %}
+
+        <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}bootstrap.css">
+        <script type="text/javascript" src="{{ STATIC_URL }}ext/ext-dev.js"></script>
+        <script type="text/javascript" src="{{ STATIC_URL }}bootstrap.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/app.css">
+		<script type="text/javascript" src="{{ STATIC_URL }}app/globals/variables.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}app/globals/locale/SM__lang-en.js"></script>
+		
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/jquery.autoresize.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/jquery-touch_punch.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/jquery.contextmenu.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/shifty.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/raphael.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/rgbcolor.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/canvg.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/Class.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/json2.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/pathfinding-browser.min.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/jquery.browser.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/jquery-ui-1.8.23.custom.min.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/lib/jquery.layout.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/draw2d/src/draw2d-all.js"></script>
+		<script type="text/javascript" src="{{ STATIC_URL }}js2db/dbModel/all-classes.js"></script>
+		
+	    <script type="text/javascript" src="{{ STATIC_URL }}app.js"></script>
+	    <!-- <script type="text/javascript">
+			// Add csrf token to every ajax request
+			Ext.Ajax.on('beforerequest', function(conn, options) {
+			    if ( typeof (options.headers) == "undefined") {
+			        options.headers = {
+			            'X-CSRFToken': Ext.util.Cookies.get('csrftoken')
+			        };
+			    } else {
+			        options.headers.extend({
+			            'X-CSRFToken': Ext.util.Cookies.get('csrftoken')
+			        });
+			    }
+			}, this);
+	    </script> -->
+	</head>
+	<body></body>
+</html>
